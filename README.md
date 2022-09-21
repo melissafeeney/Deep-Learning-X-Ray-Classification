@@ -1,1 +1,10 @@
 # Deep-Learning-X-Ray-Classification
+
+## **Can Deep Learning be used to correctly identify X-Rays of patients with COVID-19 and viral pneumonia?**
+
+## **Dataset Discussion**
+The dataset contains 1,200 COVID-19 positive chest X-Ray images, 1,341 normal chest X-Ray images, and 1,334 viral pneumonia chest X-Ray images. All of these images are compiled from different medical and publically available resources. The objective of this dataset is to serve as a repository from which researchers can perform useful and impactful work on COVID-19. Making this dataset publically available allows for people not usually privy to this type of information a chance to apply their image classification skillsets toward generating a solution for a worldwide problem.
+
+Building a predictive model using this data is certainly useful. Such a model would be able to determine, from a single chest X-Ray image, if the image represented a case of COVID-19, viral pneumonia, or if it was normal. This model would not infringe upon medical professionals' duties in diagnosing patients, but rather serve as an aid in scaling diagnostic abilities. For example, a physician might need multiple chest X-Rays and potentially additional testing to confirm a case of COVID-19. This process could be inefficient, time consuming, and naturally prone to human error. This creates an excellent opportunity for machine learning to be used to process single chest X-Rays efficiently, at scale, and without human error. A model trained to recognize the differences in chest X-Rays between affirmed cases of COVID-19 from viral pneumonia and normal condition could allow physicians to allot their time more productively in treating patients. A model could also detect patterns that differentiate COVID-19 chest X-Rays from those without the condition that the human eye could not detect.
+
+A successful model in this application would benefit patients in receiving accurate diagnoses, physicians in allowing them to spend more time treating patients, and society at large in being able to quickly identify and isolate those with positive cases of COVID-19.
