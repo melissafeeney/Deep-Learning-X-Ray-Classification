@@ -1,6 +1,6 @@
 # **Deep-Learning-X-Ray-Classification**
 
-## **Can Deep Learning be used to correctly identify X-Rays of patients with COVID-19 and viral pneumonia?**
+## ***Can Deep Learning be used to correctly identify X-Rays of patients with COVID-19 and viral pneumonia?***
 <br>
 
 ## **1. Dataset Discussion**
@@ -32,8 +32,22 @@ All four models use categorical cross entropy as the loss function and adam as t
   - DenseNet121 contains 121 layers with trainable weights, and something that makes it unique is that each layer is connected to all the layers that are deeper in the network, hence the name “dense net”. The layers are grouped into 4 groups of dense blocks, each of which contains convolutional, pooling, batch normalization and non-linear activation layers. 
 <br>
 
-## **3. Model Performance Evaluations**
-In terms of model performance, model 4 using CheXNet was best. On the test data, it earned an accuracy score of 98.71%, and a loss of 0.067. I was happy to see that the model performed really well across all metrics- including F1 score, recall, and precision. I believe that its strong performance can be attributed to its familiarity with chest X-Ray image data. Although it was not previously trained to detect COVID-19, since it was created before the pandemic, having been trained to detect the visual differences that distinguish the X-Ray of a healthy patient from an unhealthy one probably served the model well in its new task to detect COVID-19. In addition, the deep depth of the model coupled with its regularization most likely contributed to its strong performance.
+## **3. X-Ray Visualizations**
+**X-Ray Images of Patient with COVID-19**
+<br>
+![covid_xray](https://user-images.githubusercontent.com/31778500/191571341-6bdad6f0-a8b6-488b-a1de-12739862c7bf.png)
+
+**X-Ray Images of Healthy/Normal Patient**
+<br>
+![normal_xray](https://user-images.githubusercontent.com/31778500/191571351-5368e499-3e11-4e64-bf04-ffdadd19d849.png)
+
+**X-Ray Images of Patient with Viral Pneumonia**
+<br>
+![pneumonia_xray](https://user-images.githubusercontent.com/31778500/191571410-11b78498-719b-42f0-bf17-9dba94984ff4.png)
+
+
+## **4. Model Performance Evaluations**
+In terms of model performance, model 4 using CheXNet was best. On the test data, it earned an accuracy score of 98.71%, and a loss of 0.067. I was impressed to see that the model performed really well across all metrics- including F1 score, recall, and precision. I believe that its strong performance can be attributed to its familiarity with chest X-Ray image data. Although it was not previously trained to detect COVID-19, since it was created before the pandemic, having been trained to detect the visual differences that distinguish the X-Ray of a healthy patient from an unhealthy one probably served the model well in its new task to detect COVID-19. In addition, the deep depth of the model coupled with its regularization most likely contributed to its strong performance.
 
 That being said, the other models did not perform poorly. The first model (without batch normalization or dropout layers) yielded a test set accuracy of 97.81% and a loss of 0.071. Similarly, the second model (which included batch normalization but no dropout layers) yielded a test set accuracy of 97.17% and a loss of 0.093. Model 3 (with batch normalization and dropout layers) yielded a test set accuracy of 71.17% and a loss of 2.377.
 
@@ -44,7 +58,7 @@ More detailed results in the classification reports can be seen below:
 <br>
 <br>
 
-## **Citations**
+## **5. Citations**
 *Citation of paper providing original dataset:*
 
 Chowdhury, M.E.H., Rahman, T. Khandakar, A., Mazhar, R., Kadir, M.A., Mahbub, Z.B., Islam, K.R., Khan, M.S., Iqbal, A., Al-Emadi, N.Reaz. M.B.I. (2020). Can AI help in screening Viral and COVID-19 pneumonia? *IEEE Access 2020*. https://doi.org/10.48550/arXiv.2003.13145
